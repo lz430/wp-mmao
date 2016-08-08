@@ -1,0 +1,18 @@
+First Name: [estimator_form_first_name]
+Last Name: [estimator_form_last_name]
+Email Address: [estimator_form_email_address]
+
+Equipment: [equipment]
+Serial Number: [estimator_form_serial_number]
+
+Adapter: [estimator_form_adapter]
+Battery: [estimator_form_good_battery]
+Cosmetic Issues: [estimator_form_issues]
+Cosmetic Issues Info: [estimator_form_issues_info]
+
+Previously sold to us: [estimator_form_prev_sold]
+Original Box: [estimator_form_box]
+
+How would you like to receive payment: [menu-698]
+
+Additional Details: [estimator_form_additional_details]

@@ -1,0 +1,544 @@
+/*****************************************************************************/
+.clearfloat {
+	clear:both;
+	margin: 0;
+	padding: 0;
+	line-height:1px;
+	font-size: 1px;
+}
+#est_wrapper {
+	color:#231f20;
+	font:14px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	padding: 18px 10px;
+}
+#est_wrapper p.est_title {
+	color: #FFFFFF;
+	font-size: 24px;
+	line-height: 49px;
+	margin: -67px 0 20px;
+	padding: 0;
+}
+#est_wrapper h1 {
+	color:#3071a9;	
+	font:bold 1.714em/24px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	height:33px;
+	margin:0px;
+	padding:9px 0px 0px 0px;
+}
+#est_wrapper p {
+	margin:0px;
+	padding:13px 0px 10px 0px;	
+}
+#est_wrapper h4 {
+	color:#231f20;	
+	font-weight:normal;
+	font-size:1.500em;
+	margin:0px;
+	padding:10px 0px 20px 0px;
+}
+#estimator_tabs {
+	border:0px;
+	margin:0px;
+	padding:0px;
+	width:960px;	
+	background-color: #FFFFFF;
+	background-image: none;
+}
+#estimator_tabs ul.ui-tabs-nav {
+	background:transparent none;
+	border:0px;
+	list-style:none;
+	margin:0px;
+	padding:0px;	
+}
+#estimator_tabs ul li#est_default_tab {
+	display:none;	
+}
+#estimator_tabs ul.ui-tabs-nav li {
+	background:transparent none;
+	border:0px;
+	margin:0px;
+	padding:0px 37px 0px 0px;	
+}
+#estimator_tabs ul li a {
+	border:2px solid #ffffff;
+	border-radius:7px;
+	color:#1e1d1d;
+	font:bold 1.143em "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	display:block;
+	float:left;
+	height:27px;
+	margin:0px;
+	padding:118px 0px 0px 16px;
+	text-decoration:none;
+	width:142px;	
+}
+#estimator_tabs.tab_activated ul li.ui-state-default a {
+	opacity:0.7;	
+}
+#estimator_tabs.tab_activated ul li.ui-tabs-active a {
+	opacity:1;	
+	border-color: #84A303;
+}
+#estimator_tabs ul li.ui-state-default a:hover, #estimator_tabs ul li.ui-tabs-selected a {
+	border:2px solid #797979;
+	opacity:1;	
+}
+#estimator_tabs ul li a#est_desktop {
+   	background:url(../images/estimator-device-desktop.png) no-repeat;
+}
+#estimator_tabs ul li a#est_laptop {
+	background:url(../images/estimator-device-laptop.png) no-repeat;	
+}
+#estimator_tabs ul li a#est_display {
+	background:url(../images/estimator-device-display.png) no-repeat;	
+}
+#estimator_tabs ul li a#est_iPad {
+	background:url(../images/estimator-device-ipad.png) no-repeat;	
+}
+#estimator_tabs ul li a#est_iPhone {
+	background:url(../images/estimator-device-iphone.png) no-repeat;
+}
+#estimator_tabs ul.ui-tabs-nav li#est_last_tab {
+	padding-right:0px;	
+}
+.estimator_form {
+	clear:both;
+	margin:0px;
+	padding: 0;
+	text-align:center;
+	width:960px;	
+}
+#default_estimator {
+	padding:21px 1px 11px 1px;
+	position:relative;
+    z-index:1;
+	text-align:center;	
+	margin: 14px 0 0;
+	
+}
+.estimator_form div.tabbed_content {
+	background:url(../images/estimator-form-bg.jpg) repeat-x;
+	border:1px solid #c0c0c0;
+	padding:20px 0px 10px 0px;
+	position:relative;
+    z-index:1;
+	text-align:center;	
+	margin: 14px 0 0;
+}
+#default_estimator .estimator_form_go a {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	width: 124px;
+}
+.estimator_form #default_estimator.tabbed_content {
+	background:transparent none;
+	border:1px solid #ffffff;
+}
+.estimator_form .tabbed_content:before {
+ 	background:url(../images/estimator-form-arrow.gif) no-repeat;
+	display:none;
+    content:"";
+    position:absolute;
+    z-index:-1;
+    top:-14px;
+    left:0px;
+	height:14px;
+	width:28px;
+}
+.estimator_form #desktop_estimator.tabbed_content:before {
+	display:block;
+    left:19px;
+}
+.estimator_form #laptop_estimator.tabbed_content:before {
+	display:block;
+    left:226px;
+}
+.estimator_form #display_estimator.tabbed_content:before {
+	display:block;
+    left:430px;
+}
+.estimator_form #iPad_estimator.tabbed_content:before {
+	display:block;
+    left:626px;
+}
+.estimator_form #iPhone_estimator.tabbed_content:before {
+	display:block;
+    left:826px;
+}
+.estimator_form_select {
+	background: url("../images/estimator-select-bg.png") no-repeat scroll right top transparent;
+	overflow: hidden;
+	position:relative;
+	margin:0px auto;
+	padding:0px 0px 15px 0px;
+	height:30px;
+	width:354px;
+}
+.estimator_form_select_box{
+	width: 354px;
+	overflow: hidden;
+	text-align: left;
+}
+.estimator_form_select span {
+	/*background:url(../images/estimator-select-arrow.jpg) no-repeat top right;
+	display:block;
+	height:30px;
+	position:absolute;
+	text-align:center;
+	top:0px;
+	right:0px;
+	width:28px;
+	z-index:15;*/
+}
+.estimator_form_select select {
+    background: none;
+	color:#000000;
+	font:14px/14px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	display:block;
+	width:354px;
+	height:30px;
+	padding:0;
+	border:none;
+    margin:0;
+    position:absolute;
+    opacity:0;
+    filter: alpha(opacity=0);
+}
+.estimator_form_select_box span.customStyleSelectBox {
+    display:inline-block;
+    height: 30px;
+    overflow: hidden;
+    width: 326px;
+}
+.estimator_form_select_box span.customStyleSelectBoxInner {
+    line-height:28px;
+    text-align:left;
+    display:inline-block;
+    width:354px;
+    height:30px;
+    padding:0 0 0 14px;
+}
+.sel_disabled .customStyleSelectBoxInner {
+    opacity:0.5;
+}
+.estimator_form_select select:disabled {
+	/*opacity:0.5;*/
+}
+.estimator_form_select_arrow {
+    float: left;
+    height: 30px;
+    width: 28px;
+}
+/*****************************************************************************/
+.est_model_info {
+	float:left;
+	padding:26px 0px 30px 0px;
+}
+img#est_model_thumb {
+	// height: 294px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -50%;
+	margin-top: -35%;
+	max-width: 390px;
+}
+div.est_model_thumb_container {
+    border: 1px solid #C0C0C0;
+    height: 294px;
+    text-align: center;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+@media screen and (max-width: 768px){
+div.est_model_thumb_container {
+	background-size: 65%;
+	}
+}
+#est_wrapper .est_model_info h4 {
+	color:#4B4B4B;
+	font:16px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	margin:0px;
+	padding:10px 0px 5px 0px;	
+}
+#est_model_title{
+	font-size: 160%;
+}
+span#est_model_price, span#est_model_price_zeroval {
+	color:#84A303;
+	display:block;
+	font:600 30px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	margin:0px;
+	padding:0px 0px 0px 0px;	
+}
+.est_model_info p {
+	color:#4B4B4B;
+	font:14px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	margin:0px;
+	padding:5px 0px 0px 0px;	
+}
+.est_model_info.est_model_info_zero p {
+	font-size:16px;	
+}
+/*****************************************************************************/
+.est_model_form {
+	float:right;
+	padding:17px 0px 30px 0px;
+	width:461px;	
+}
+.est_model_form .estimator_form {
+	padding:0px;
+	margin:0px;
+	width:461px;	
+}
+.est_model_form .estimator_form tr.estimator_form_payment select{
+	font:13px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	width:209px;	
+}
+.est_model_form .estimator_form tr.estimator_form_payment select option{
+    font:13px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+.estimator_form table td {
+	color:#231f20;	
+	font:15px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+.est_model_form .estimator_form table td {
+	font-size:13px;	
+}
+.est_model_form table td {
+	text-align:left;
+	padding:9px 0px 9px 0px;
+	vertical-align:top;
+}
+.est_model_form table tr#est_form_issues_info td {
+	padding-top:0px;	
+}
+.est_model_form table tr#est_form_issues_info td textarea {
+	border:1px solid #c0c0c0;
+	height:66px;
+	margin:5px 0px 0px 0px;
+	width:451px;	
+}
+.est_model_form table tr.estimator_form_issues td {
+	padding-bottom:0px;
+}
+.est_model_form table tr.estimator_form_prev_sold td{
+}
+.est_model_form table tr.estimator_form_box td, .est_model_form table tr.estimator_form_prev_sold td, .est_model_form table tr.estimator_form_payment td {
+	border-bottom:1px solid #eeeeee;
+	padding:10px 0px 10px 0px;
+}
+.est_model_form table tr.estimator_form_submit td {
+	padding:20px 0px 0px 0px;	
+}
+.est_model_form table tr.estimator_form_submit td a {
+	display:inline-block;
+	float:left;
+	padding-right:10px;	
+}
+/*****************************************************************************/
+.est_info_form {
+	float:right;
+	padding:7px 0px 30px 0px;
+	width:461px;	
+}
+.est_info_form .estimator_form {
+	padding:0px;
+	margin:0px;
+	width:461px;	
+}
+.est_info_form table td {
+	font-size:15px;
+	text-align:left;
+	padding:5px 0px 9px 0px;
+	vertical-align:top;
+}
+.est_info_form table tr#est_form_disclaimer td {
+	border-bottom:1px solid #eeeeee;
+}
+.est_info_form table tr#est_form_disclaimer td p {
+	color:#231f20;
+	font-size:13px;
+	margin:0px;
+	padding:10px 0px;
+}
+.est_info_form table td textarea {
+	border:1px solid #c0c0c0;
+	height:66px;
+	margin:5px 0px 0px 0px;
+	width:451px;	
+}
+.est_info_form table td input[type="text"] {
+	border:1px solid #c0c0c0;
+	height:30px;
+	padding:0px 10px 0px 10px;
+	margin:5px 0px 0px 0px;
+	width:431px;	
+}
+.est_info_form table tr#est_form_photos_title td span {
+	font-size:13px;
+	font-style:italic;	
+}
+.est_info_form table tr#est_form_photos td span em {
+	color:#ff0000;
+	font-size:12px;
+}
+.est_info_form table tr.est_form_contact_info td {
+	border-top:1px solid #eeeeee;
+	font-size:18px;
+	font-weight:normal;
+	padding-top:5px;
+	padding-bottom:2px;
+	color: #231F20;
+}
+.est_info_form table tr.est_form_submit td {
+	border-top:1px solid #eeeeee;
+	padding-top:15px;
+}
+.est_info_form table tr.est_form_last_name td {
+	padding-bottom:15px;
+}
+.est_info_form table tr.est_form_submit td a {
+	display:inline-block;
+	float:left;
+	padding-right:10px;	
+}
+/*****************************************************************************/
+.est_info_form table tr#est_form_disclaimer_zeroval td {
+	border-bottom:0px;
+}
+.est_info_form table tr#est_form_disclaimer_zeroval td p {
+	color:#231f20;
+	font-size:13px;
+	margin:0px;
+	padding:10px 0px 0px 0px;
+}
+.est_info_form table tr#est_form_state td select {
+	border:1px solid #c0c0c0;
+	font-size:13px;
+	padding:4px;
+	width:211px;
+}
+.est_info_form table tr#est_form_shipping_info td {
+	font-size:18px;
+	font-weight:600;
+	padding-top:5px;
+	padding-bottom:2px;
+}
+.est_info_form table tr#est_form_zip_code td {
+	padding-bottom:15px;
+}
+/*****************************************************************************/
+#est_thank_you_message {
+	float:right;
+	width:461px;
+	padding:20px 0;
+	border-bottom:1px solid #eeeeee;
+	margin:0 0 10px;
+}
+#est_thank_you_message strong {
+	font-size:30px;
+	font-weight:normal;	
+}
+#est_thank_you_message p {
+	font-size:16px;
+	margin:0;
+	padding:10px 0 0;	
+}
+#estimator_thankyou_btns {
+    float:right;
+    width:461px;
+}
+#estimator_thankyou_btns p{
+    display:table;
+}
+#estimator_thankyou_btns span{
+    display:table-cell;
+    padding:0 12px 0 0;
+    vertical-align:middle;
+}
+#estimator_thankyou_btns a{
+    float:right;
+}
+/*****************************************************************************/
+#est_promos_outter {
+	background:url(../images/estimator-promos-bg.jpg) no-repeat 14px 20px;
+	clear:both;
+	border-top:1px solid #dfdfdf;
+	margin:20px 0px 0px 0px;	
+	padding:20px 0px 0px 0px;
+	width:890px;
+}
+#est_promos_inner {
+	background:url(../images/estimator-promos-btm.jpg) no-repeat 14px bottom;
+	clear:both;
+	position:relative;
+	width:890px;
+}
+.est_promo, .est_promo:hover {
+	color:#1e1d1d;
+	display:block;
+	float:left;
+	padding:0px 5px 0px 14px;
+	width:193px;	
+	text-decoration:none;
+}
+.est_promo h4 {
+	height:28px;
+	font:bold 15px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	margin:0px;
+	padding:7px 0px 0px 0px;	
+	text-align:center;
+}
+.est_promo p {
+	color:#231f20;
+	font:11px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	margin:0px;
+	padding:45px 0px 10px 12px;
+}
+.est_promo p a {
+	color:#231f20;
+	font:11px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	text-decoration:underline;
+}
+.est_promo p a:hover {
+	text-decoration:none;	
+}
+#est_promo_serial span, #est_promo_faq span {
+	color:#1e1d1d;
+	display:block;
+	font:bold 13px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	height:25px;
+	padding:3px 0px 0px 12px;
+	position:absolute;
+	bottom:0px;
+	text-decoration:none;
+}
+#est_promo_serial span {
+	left:14px;
+	width: 186px;	
+}
+#est_promo_faq span {
+	right: 27px;
+    width: 186px;	
+}
+#est_promo_serial {
+	background:url(../images/estimator-promo-serial.jpg) no-repeat 14px 0px;	
+	padding-bottom:28px;
+}
+#est_promo_individual {
+	background:url(../images/estimator-promo-individual.jpg) no-repeat 14px 0px;
+	width:200px;	
+}
+#est_promo_volume {
+	background:url(../images/estimator-promo-volume.jpg) no-repeat 15px 0px;	
+	width:201px;
+}
+#est_promo_faq {
+	background:url(../images/estimator-promo-faq.jpg) no-repeat 14px 0px;
+	padding-bottom:28px;	
+}

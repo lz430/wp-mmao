@@ -1,0 +1,1 @@
+<div class="post_edit section"><?php edit_post_link('Edit', '<span>', '</span>'); ?></div>

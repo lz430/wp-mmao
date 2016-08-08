@@ -1,0 +1,1232 @@
+/*
+Theme Name: Brandlabs Custom Theme
+Theme URI:http://www.macmeanoffer.com/
+Description:Custom theme for Volusion stores created by Brandlabs. Based on Classic Theme
+Version: 1.0
+Author: Brand Labs
+Author URI: http://www.brandlabs.us/
+Tags: volusion, custom header, fixed width, two columns, widgets
+*/
+
+/*****************************************    
+        Configuration
+******************************************/
+
+html, body {
+    padding:0;
+    margin:0;
+    min-width:1024px;
+}
+
+body {
+    color:#4b4b4b;
+    font:13px lucida grande,arial,sans-serif;
+    border-top:4px solid #84a303;
+    min-width: 960px;
+}
+
+a {text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+img{border:0;}
+
+.clearfloat {
+    clear:both;
+    font-size:1px;
+    padding:0;
+    margin:0;
+}
+
+#header-wrapper {
+    background:url(/wp-content/themes/custom/images/header-bg.jpg) no-repeat center top;
+    min-height:94px;
+}
+
+#header {
+    width:960px;
+    height:115px;
+    margin:0 auto;
+}
+
+#header-logo {
+    float:left;
+    background:url(/wp-content/themes/custom/images/macmeanoffer-logo-green.png) no-repeat left top;
+    color:#4e4e4e;
+    font:13px lucida grande,arial,sans-serif;
+    width:248px;
+    height:20px;
+    padding:50px 0 0 64px;
+    margin:25px 0 0;
+}
+
+#header-logo:hover {text-decoration:none;}
+
+#header-right {
+    float:right;
+    text-align:right;
+    width:480px;
+}
+
+#header-help {
+    background:url(/wp-content/themes/custom/images/header-help.jpg) no-repeat 12px 2px #84a303;
+    color:#ffffff;
+    font:15px lucida grande,arial,sans-serif;
+    padding:0 12px 9px 38px;
+    border-radius:0 0 5px 5px;
+    margin:0 0 0 300px;
+}
+
+#header-nav {
+    float:right;
+    margin:29px 0 0;
+}
+
+#header-nav ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+#header-nav ul li{
+    float:left;
+    text-align:center;
+    padding:0 16px;
+    border-right:1px solid #d6d6d6;
+    margin:2px 0 0;
+}
+
+#header-nav a{
+    color:#4b4b4b;
+    font:13px lucida grande,arial,sans-serif;    
+}
+
+#header-nav a:hover{
+    color:#84a303;
+    text-decoration:none;
+}
+
+#header-nav li#menu-item-18 {
+    padding:0 0 0 16px;
+    border:0;
+}
+
+#subheader-wrapper {
+    background:url(/wp-content/themes/custom/images/subheader-bg.jpg) repeat-x left top;
+    min-height:316px;
+}
+
+#subheader {
+    clear:both;
+    width:960px;
+    height:238px;
+    padding:38px 0 0;
+    margin:0 auto;
+    position:relative;
+}
+
+#subheader img{
+    position:absolute;
+    top:-30px;
+    left:365px;
+}
+
+#subheader h1{
+    font:34px lucida grande,arial,sans-serif;
+    margin:0 0 33px;
+}
+
+#subheader p{
+    font:14px/23px lucida grande,arial,sans-serif;
+    margin:0;
+}
+
+/************* Content Area *************/
+#bloglogo {
+    display:none;
+}
+
+#blog_content {
+    clear:both;
+    width:960px;
+    min-height:500px;
+    margin:0 auto;
+}
+
+#est_wrapper {
+    clear:both;
+    width:960px;
+    margin:0 auto;
+}
+
+#est_wrapper h4{
+    color:#ffffff;
+    font:24px lucida grande,arial,sans-serif;
+    height:40px;
+    margin:0;
+}
+
+/************* Home Page *************/
+body.home #blog_content {
+    width:auto !important;
+}
+
+body.home #blog_content div.post > h2{
+    display:none;
+}
+
+/************* Sub-Pages *************/
+body.page #blog_content {
+    width:auto !important;
+}
+
+body.page #blog_content div.post > h2{
+    display:none;
+}
+
+#subheader-wrapper-page {
+  border-top: 3px solid #d5d5d5;
+    background-color: #ebebeb;
+}
+
+#subheader-wrapper-page #subheader {
+  padding: 26px 0 0;
+  text-align: left;
+}
+
+
+/*Why Sell Header*/
+#subheader-wrapper-page #subheader.header-whysell {
+  height: 271px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  #subheader-wrapper-page #subheader.header-whysell {
+    height: 255px;
+  }
+}
+
+#subheader-wrapper-page #subheader h1 {
+  margin: 0 0 27px;
+}
+
+#subheader-wrapper-page #subheader h1.whysell {
+  margin: 0 0 23px;
+}
+
+#subheader-wrapper-page #subheader h2 {
+  color: #799504;
+    font:normal 22px/26px lucida grande,arial,sans-serif;
+    text-align:left;
+    margin: 9px 0 25px 0;
+}
+
+#subheader-wrapper-page #subheader h2.whysell {
+    margin: 9px 0 27px 0;
+}
+
+#subheader-wrapper-page .imac {
+  width: 420px;
+  height: 354px;
+  position: absolute;
+    right: 0;
+    top: -17px;
+  z-index: 999;
+  background:url(/wp-content/themes/custom/images/imac-whysell.png) no-repeat left top;
+}
+
+
+/*Sell in Volume Header*/
+#subheader-wrapper-page #subheader.header-volume {
+  height: 240px;
+}
+
+.laptops {
+  float: right;
+  margin: 0;
+    padding: 0;
+  width: 488px;
+  height: 254px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  background:url(/wp-content/themes/custom/images/volumeseller-laptops.png) no-repeat left top;
+}
+
+#subheader-wrapper-page #subheader h1.volume {
+  margin: 0 0 23px;
+}
+
+#subheader-wrapper-page #subheader h2.volume {
+    margin: 9px 0 23px 0;
+}
+
+#steps {
+    clear:both;
+    width:960px;
+    margin:0 auto;
+}
+
+#steps p.intro_description {
+  margin:0;
+  padding:20px 0 17px 0;
+  font: 100 15px/26px lucida grande,arial,sans-serif;
+}
+
+p.intro_description strong {
+  font-weight: 600;
+}
+
+#steps h3 {
+  float: left;
+  margin: 0 13px 0 2px;
+  color: #cecece;
+  font: 600 72px/72px Arial,Helvetica,sans-serif;
+}
+
+#steps h4 {
+  float: left;
+  color: #799504;
+}
+
+#steps h4 strong {
+  font-weight: 600;
+}
+
+.step-1 {
+    clear: both;
+    float: left;
+    width: 960px;
+  margin: 0;
+  padding: 10px 0 0 0;
+  border-top: 1px solid #ebebeb;
+}
+
+.step-1 h4 {
+  margin: 14px 36px 0 0;
+  padding: 0;
+  font: 100 20px/24px lucida grande,arial,sans-serif; 
+}
+
+.step-1 a img {
+  float: left;
+  margin: 13px 0 0 0;
+}
+
+.step-2 {
+    clear: both;
+    float: left;
+    width: 960px;
+  margin: 0 0 24px 0;
+  padding: 0 0 9px 0;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.step-2 h4 {
+  margin: 24px 0 0 0;
+  padding: 0;
+  font: 100 22px/24px lucida grande,arial,sans-serif; 
+}
+
+#steps .divider {
+  clear: both;
+  float:left;
+  width: 100%;
+  height: 1px;
+  margin: 20px 0 11px;
+  text-align: center;
+  color: #4b4b4b;
+  font: 100 14px/14px lucida grande,arial,sans-serif; 
+  background-color:#ebebeb;
+} 
+
+#steps .divider span { 
+  background:#fff;
+  margin: 0 0 0 14px;
+  padding:0 10px;
+  position:relative;
+  top:-0.5em;
+}
+
+
+/*Contact Box*/
+#subheader-wrapper-page #subheader .contact_box {
+  float: right;
+  width: 236px;
+  border-radius: 5px;
+  border: 1px solid #d6d6d6;
+  background-color: #fafbf7;
+  margin: 6px 0 25px;
+}
+
+#subheader-wrapper-page #subheader .contact_box p, #subheader-wrapper-page #subheader .contact_box a  {
+  clear: both;
+  float: left;
+  width: 207px;
+  color: #4b4b4b;
+  text-decoration: none;
+  margin: 12px 0 4px 15px;
+  padding: 0;
+    font:normal 16px/20px lucida grande,arial,sans-serif;
+}
+
+#subheader-wrapper-page #subheader .contact_box img {
+  position: static;
+  left: auto;
+  top: auto;
+}
+
+#subheader-wrapper-page #subheader .contact_box a.email_button {
+  padding-bottom: 8px;
+  margin-left: 14px;
+}
+
+#subheader-wrapper-page #subheader .contact_box a.bbb {
+  padding-bottom: 16px;
+  margin-left: 14px;
+}
+
+
+#subheader-wrapper-page #subheader .contact_box p.phone {
+  margin-bottom: 8px;
+    font:bold 17px/20px lucida grande,arial,sans-serif;
+}
+
+.photo_section {
+  margin: 0 auto;
+  width: 960px;
+  min-height: 295px;
+    background:url(/wp-content/themes/custom/images/photo-about_us.jpg) no-repeat left top;
+}
+
+
+/*Grey Bar Separator*/
+#grey_bar {
+    clear:both;
+    width: 100%;
+    height:49px;
+    background-color: #4b4b4b;
+    margin: 0 0 40px;
+}
+
+#grey_bar-grey_section {
+    clear:both;
+    width: 100%;
+    height:49px;
+    background-color: #4b4b4b;
+    margin: 0 0 -21px 0;
+}
+
+#grey_bar h3, #grey_bar-grey_section h3 {
+    width:960px;
+    margin:0 auto;
+    padding: 9px 0;
+    text-align: left;
+    color:#fff;
+    font:normal 24px/27px lucida grande,arial,sans-serif;
+}
+
+/*Shadow Section with Grey BG*/
+#shadow_section_grey {
+    clear:both;
+    width:100%;
+    background:#ebebeb url(/wp-content/themes/custom/images/shadow-section_bg.jpg) repeat-x left top;
+}
+
+/*Grey Bar Tab with Shadow*/
+h3#grey_bar_tab {
+    width:960px;
+    margin:0 auto;
+    padding: 2px 0 0;
+    text-align:left;
+    color:#fff;
+    font:normal 20px/23px lucida grande,arial,sans-serif;
+    background:url(/wp-content/themes/custom/images/shadow-section_tab_bg.jpg) repeat-x left top;
+}
+
+h3#grey_bar_tab img {
+  padding: 5px 8px 5px 5px;
+  vertical-align: middle;
+}
+
+/*Shadow Section with Grey BG - Content Section*/
+#shadow_section_grey #content_section {
+    width:960px;
+    margin:21px auto 0 auto;
+    padding:0;
+    text-align:left;
+}
+
+#shadow_section_grey #content_section a {
+  color: #799504;
+  text-decoration: underline;
+}
+
+#shadow_section_grey #content_section a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+#shadow_section_grey #content_section img {
+  vertical-align: middle;
+}
+
+#shadow_section_grey #content_section p {
+  padding: 0;
+  margin: 0;
+  color: #4b4b4b;
+    font: 100 normal 14px/23px lucida grande,arial,sans-serif;
+}
+
+#shadow_section_grey #content_section p.intro_description {
+  margin:0;
+  padding:24px 0 20px 2px;
+}
+
+/*Shadow Section with Grey BG - Content Column Left*/
+#shadow_section_grey .section_left {
+  clear: both;
+  float: left;
+  width: 480px;
+}
+
+#shadow_section_grey #content_section .section_left p.selling-buttons-bottom {
+  margin-bottom: 81px;
+}
+
+#content_section a.selling_button {
+  float: left;
+  margin: -12px 45px 23px 0;
+}
+
+#content_section a.learn_more {
+    font:normal 15px/23px lucida grande,arial,sans-serif;
+}
+
+/*Shadow Section with Grey BG - Content Column Right*/
+#shadow_section_grey .section_right {
+  float: left;
+  width: 410px;
+  margin-left: 50px;
+}
+
+#shadow_section_grey .volume-bottom .section_right {
+  margin-left: 30px;
+}
+
+/*Shadow Section with Grey BG - Quote*/
+#shadow_section_grey blockquote {
+  float: left;
+  padding: 0;
+  margin: 0;
+  color: #4b4b4b;
+  font: 100 21px/30px "Open Sans", sans-serif;
+    background:url(/wp-content/themes/custom/images/openquote.gif) no-repeat left top;
+}
+
+#shadow_section_grey blockquote span.quote {
+  width: 385px;
+  padding: 0;
+  display: block;
+  margin-left: 35px;
+    background:url(/wp-content/themes/custom/images/closequote.gif) no-repeat right bottom;
+}
+
+#shadow_section_grey blockquote span.author {
+  padding: 5px 0;
+  margin-left: 35px;
+  display: block;
+  color: #4b4b4b;
+  font: 100 14px/23px "Open Sans", sans-serif;
+}
+
+/*Height Adjustment for "How it Works" section on "Why Sell to Us?" page*/
+#howitworks.whysell {
+  height: 222px;
+}
+
+/*Bottom Section with Call-out Boxes*/
+#bottom_callouts {
+  clear: both;
+    width:960px;
+    margin:36px auto 0 auto;
+}
+
+/*Buy a Used Mac Call-out for Bottom Section*/
+#bottom_callouts #buybox p{
+    font:13px/19px lucida grande,arial,sans-serif;
+    width:273px;
+    padding:15px 12px 13px 16px;
+    margin:0;
+}
+
+#bottom_callouts #buybox a{
+  padding: 5px 0 14px 14px;
+}
+
+/*Help Call-out for Bottom Section*/
+#bottom_callouts #helpbox {
+    float:right;
+    background-color:#f3f3f3;
+    width:462px;
+    height:180px;
+    border-radius:5px;
+    margin:0 0 33px;
+    position:relative;
+}
+
+#bottom_callouts #help-bg{
+    position:absolute;
+    top:8px;
+    right:18px;
+}
+
+#bottom_callouts #helpbox h3{
+    background-color:#dcdcdc;
+    font:bold 21px lucida grande,arial,sans-serif;
+    padding:8px 16px;
+    border-radius:5px 5px 0 0;
+    margin:0;
+}
+
+#bottom_callouts #helpbox p{
+    font:100 14px/20px lucida grande,arial,sans-serif;
+    width:270px;
+    padding:15px 12px 13px 16px;
+    margin:0;
+}
+
+#bottom_callouts #helpbox a{
+    clear: both;
+    float: right;
+    display:block;
+    padding:5px 18px 14px 0;
+}
+
+/*Sell in Volume Page Styling */
+.asset-callout {
+  float: left;
+  width: 480px;
+  margin:0 0 14px 0;
+}
+
+.asset-callout img {
+  float:left;
+}
+
+.asset-callout h4 {
+  float:left;
+    margin:22px 0 0 14px;
+    padding:0;
+  width:343px;
+  color:#799504;
+    font:100 18px/23px lucida grande,arial,sans-serif;
+}
+
+.asset-callout h4.multiline {
+    margin:11px 0 0 14px;
+}
+
+#shadow_section_grey .volume-bottom {
+  width: 957px !important;
+  margin:0;
+  padding:0 0 21px 0 !important;
+}
+
+.volume-bottom .section_left p {
+  margin: 0;
+  width: 477px;
+}
+
+.volume-bottom .section_right p {
+  margin: 0 0 0 3px !important;
+  width: 477px;
+}
+
+/*Help / FAQ / Contact*/
+#subheader-wrapper-page #subheader.header-help {
+  height: 270px;
+  background:url(/wp-content/themes/custom/images/photo-help.jpg) no-repeat left top;
+}
+
+#subheader-wrapper-page #subheader.header-help .contact_box {
+  margin: 1px 0 21px;
+}
+
+#subheader-wrapper-page #subheader.header-help .contact_box .phone {
+  margin-top: 2px;
+  margin-bottom: 1px;
+}
+
+#subheader-wrapper-page #subheader.header-help .contact_box a.email_button {
+  padding-bottom: 11px;
+}
+
+#subheader-wrapper-page #subheader a.terms_button {
+  clear: both;
+  float: right;
+  margin: 0 16px 0 0;
+}
+
+#subheader-wrapper-page #subheader a.terms_button img {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+
+#subheader-wrapper-page #subheader h1.help {
+  margin: 0 0 25px;
+}
+
+#subheader-wrapper-page #subheader h2.help {
+    margin: 9px 0 29px 0;
+}
+
+#grey_bar.faq {
+    margin:0 0 23px 0;
+}
+
+#grey_bar h3.faq {
+    width:960px;
+    margin:0 auto;
+    padding: 12px 0;
+    text-align: left;
+    color:#fff;
+    font:100 17px/23px lucida grande,arial,sans-serif;
+    text-transform: uppercase;
+}
+
+#faq {
+  clear: both;
+    width:960px;
+    margin:0 auto;
+    color: #4b4b4b;
+}
+
+#faq a, #terms_conditions a {
+    color:#4b4b4b;
+    text-decoration:underline;
+}
+
+#faq a:hover, #terms_conditions a:hover {
+  color: #000;
+    text-decoration:none;
+}
+
+#faq strong {
+  font-weight: bold;
+}
+
+#faq div {
+  clear: both;
+  float: left;
+  width: 960px;
+  margin: 0 0 13px 0;
+  padding: 0 0 5px 0;
+    border-bottom: 1px solid #ebebeb;
+  background:url(/wp-content/themes/custom/images/icon-question.png) no-repeat left top;
+}
+
+#faq h4 {
+  padding: 0 0 5px 0;
+  margin: -5px 0 0 50px;
+    font:600 16px/23px lucida grande,arial,sans-serif;
+}
+
+#faq p {
+  padding-bottom: 8px;
+  margin: 0 0 0 53px;
+    font:100 14px/23px lucida grande,arial,sans-serif;
+}
+
+
+/*Terms & Conditions*/
+#subheader-wrapper-page #subheader.header-terms {
+  height: 151px;
+}
+
+#subheader-wrapper-page #subheader h1.terms {
+  margin: 0 0 23px;
+}
+
+#grey_bar.terms {
+    margin:0 0 26px 0;
+}
+
+#grey_bar h3.terms {
+    width:960px;
+    margin:0 auto;
+    padding: 12px 0;
+    text-align: left;
+    color:#fff;
+    font:100 17px/23px lucida grande,arial,sans-serif;
+    text-transform: uppercase;
+}
+
+#terms_conditions {
+  clear: both;
+    width:960px;
+    margin:0 auto;
+    color: #4b4b4b;
+}
+
+#terms_conditions h4 {
+  padding-bottom: 7px;
+  margin: 0;
+    font:600 16px/23px lucida grande,arial,sans-serif;
+}
+
+#terms_conditions p { 
+    font:100 14px/23px lucida grande,arial,sans-serif;
+  margin: 0 0 9px 0;
+  padding: 0 0 12px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+
+/*Site Map*/
+#subheader-wrapper-page #subheader.header-sitemap {
+  height: 70px;
+}
+
+#subheader-wrapper-page #subheader h1.sitemap {
+  margin: 0 0 23px;
+}
+
+#sitemap {
+  clear: both;
+    width:960px;
+    margin:0 auto;
+    color: #4b4b4b;
+}
+
+#sitemap ul { 
+    font:100 14px/23px lucida grande,arial,sans-serif;
+  margin: 20px 0 9px 14px;
+  padding: 0 0 12px 0;
+}
+
+#sitemap ul li a {
+  margin-bottom: 8px;
+    color:#8cae03;
+    text-decoration:underline;
+}
+
+#sitemap ul li a:hover {
+  color: #000;
+    text-decoration:none;
+}
+
+/*Edit Link (Only Seen While Logged into WordPress)*/
+.post_edit {
+  clear: both;
+    width:960px;
+    margin:0 auto;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.post_edit a {
+  color: #8cae03;
+  font: normal 12px/16px Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
+
+.post_edit a:hover {  
+  color: #000;
+  text-decoration: none;
+}
+
+/************* Footer *************/
+#serialnumber {
+    clear:both;
+    background:url(/wp-content/themes/custom/images/serialnumber-bg.jpg) no-repeat left top;
+    list-style:none;
+    width:960px;
+    height:54px;
+    padding:0;
+    margin:0 auto;
+}
+
+#serialnumber li{
+    background:url(/wp-content/themes/custom/images/sell-divider.jpg) no-repeat right top;
+    float:left;
+    padding:16px 0 0;
+}
+
+#serialnumber #serialnumber-first {
+    width:277px;
+    padding:12px 0 0;
+}
+
+#serialnumber-first a{
+    background:url(/wp-content/themes/custom/images/serialnumber-or.png) no-repeat 22px top;
+    color:#4b4b4b;
+    font:18px lucida grande,arial,sans-serif;
+    padding:0 0 6px 68px;
+}
+
+#serialnumber a:hover{
+    color:#84a303;
+    text-decoration:none;
+}
+
+#serialnumber #serialnumber-second {
+    text-align:center;
+    width:426px;
+}
+
+#serialnumber #serialnumber-last {
+    background:none;
+    text-align:center;
+    width:257px
+}
+
+#serialnumber-last a{
+    background:url(/wp-content/themes/custom/images/serialnumber-go.png) no-repeat right center;
+    color:#4b4b4b;
+    font:13px lucida grande,arial,sans-serif;
+    padding:12px 32px 12px 0;
+}
+
+#whysell-wrapper {
+    clear:both;
+    background:url(/wp-content/themes/custom/images/sell-bg.jpg) repeat-x left top;
+    height:192px;
+    margin:0 0 23px;
+}
+
+#whysell {
+    width:960px;
+    padding:16px 0 0;
+    margin:0 auto;
+}
+
+#whysell h2{
+    font:28px lucida grande,arial,sans-serif;
+    text-align:center;
+    margin: 0 0 27px;
+}
+
+#whysell ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+#whysell ul li{
+    float:left;
+    line-height:18px;
+    text-align:center;
+    width:190px;
+    padding:51px 0 0;
+}
+
+#whysell-first {background:url(/wp-content/themes/custom/images/sell-icon-imac.png) no-repeat center top;}
+#whysell-second {background:url(/wp-content/themes/custom/images/sell-icon-truck.png) no-repeat center top;}
+#whysell-third {background:url(/wp-content/themes/custom/images/sell-icon-iphone.png) no-repeat center top;}
+#whysell-fourth {background:url(/wp-content/themes/custom/images/sell-icon-stranger.png) no-repeat center top;}
+#whysell-fifth {background:url(/wp-content/themes/custom/images/sell-icon-mlogo.png) no-repeat center top;}
+
+#howitworks {
+    clear:both;
+    width:960px;
+    margin:0 auto;
+}
+
+#howitworks h2{
+    font:28px lucida grande,arial,sans-serif;
+    text-align:center;
+    margin: 0 0 32px;
+}
+
+#howitworks ul{
+    list-style:none;
+    height:232px;
+    padding:0;
+    margin:0;
+}
+
+#howitworks ul li{
+    float:left;
+    background:url(/wp-content/themes/custom/images/howitworks-divider.jpg) no-repeat right top;
+    line-height:20px;
+    text-align:center;
+    width:197px;
+    padding:0 32px;
+}
+
+#howitworks li#works-first{
+    width:188px;
+    padding:0 26px 0 4px;
+}
+
+#howitworks li#works-fourth{
+    background:none;
+    width:196px; /*176*/
+    padding:0 0 0 14px; /*0 22*/
+}
+
+#howitworks ul li p{
+    margin:14px 0 0;
+}
+
+#howitworks ul li a {
+  color: #4B4B4B;
+  text-decoration: underline;
+}
+
+#howitworks ul li a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+#buybox {
+    clear:both;
+    float:left;
+    background-color:#f3f3f3;
+    width:462px;
+    height:180px;
+    border-radius:5px;
+    margin:0 0 33px;
+    position:relative;
+}
+
+#buybox-bg{
+    position:absolute;
+    top:18px;
+    left:281px;
+}
+
+#buybox h3{
+    background-color:#dcdcdc;
+    font:bold 21px lucida grande,arial,sans-serif;
+    padding:8px 16px;
+    border-radius:5px 5px 0 0;
+    margin:0;
+}
+
+#buybox p{
+    font:15px/19px lucida grande,arial,sans-serif;
+    width:265px;
+    padding:15px 12px 13px 16px;
+    margin:0;
+}
+
+#buybox a{
+    clear:both;
+    display:block;
+    padding:5px 0 14px 16px;
+}
+
+#selltextbox {
+    float:right;
+    background-color:#f3f3f3;
+    width:462px;
+    height:180px;
+    border-radius:5px;
+    margin:0 0 33px;
+    position:relative;
+}
+
+#sellbox-bg{
+    position:absolute;
+    top:20px;
+    left:168px;
+}
+
+#selltextbox h3{
+    background-color:#dcdcdc;
+    font:bold 21px lucida grande,arial,sans-serif;
+    padding:8px 16px;
+    border-radius:5px 5px 0 0;
+    margin:0;
+}
+
+#selltextbox p{
+    font:15px/19px lucida grande,arial,sans-serif;
+    padding:13px 12px 23px 16px;
+    margin:0;
+}
+
+#selltextbox a{
+    color:#4b4b4b;
+    font:13px lucida grande,arial,sans-serif;
+    text-decoration:underline;
+    margin:0 0 0 16px;
+}
+
+#selltextbox a:hover{
+    color:#000000;
+}
+
+#footer-wrapper {
+    clear:both;
+    background-color:#ebebeb;
+    height:74px;
+}
+
+#footer {
+    width:960px;
+    margin:0 auto;
+}
+
+#footer-nav {
+    float:left;
+    padding:30px 0 0 2px;
+}
+
+#footer-nav ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+#footer-nav ul li{
+    float:left;
+    padding:0 25px 0 0;
+}
+
+#footer-nav a{
+    float:left;
+    color:#4b4b4b;
+    font:13px lucida grande,arial,sans-serif;
+}
+
+#footer-nav a:hover{
+    color:#84a303;
+    text-decoration:none;
+}
+
+/*#footer-nav a#footer-nav {
+    padding:0;
+}*/
+
+#footer p{
+    float:right;
+    text-align:center;
+    width:216px;
+    margin:0;
+}
+
+#footer span{
+    font:12px lucida grande,arial,sans-serif;
+    display:block;
+    padding:10px 0 6px;
+    border-bottom:1px solid #d3d3d3;
+    margin:0 0 5px;
+}
+
+#subfooter {
+    color:#4b4b4b;
+    font:11px lucida grande,arial,sans-serif;
+    width:960px;
+    margin:0 auto;
+}
+
+#copyright {
+    float:left;
+    width:370px;
+}
+
+#powerdesign {
+    float:right;
+    text-align:right;
+    width:160px;
+}
+
+#powerdesign a{
+    color:#4b4b4b;
+    font:11px lucida grande,arial,sans-serif;
+}
+
+#powerdesign a:hover{
+    color:#84a303;
+    text-decoration:none;
+}
+
+
+/* Template Overrides
+---------------------------------------*/
+#sidebar {display:none;}
+
+
+
+
+/*****************************************    
+        Wordpress Modules
+******************************************/
+/*  WP Calendar
+---------------------------------------*/
+#wp-calendar #prev a, #wp-calendar #next a{font-size:9pt}
+#wp-calendar a{text-decoration:none}
+#wp-calendar caption{font:bold 1.3em Arial,Helvetica,Sans-Serif; text-align:center}
+#wp-calendar th{font-style:normal; text-transform:capitalize}
+
+
+#commentform p{margin:5px 0}
+.nocomments{text-align:center; margin:0; padding:0}
+.commentmetadata{margin:0; display:block}
+
+/*  Wp-calender
+---------------------------------------*/
+#wp-calendar{ empty-cells:show; margin:10px auto 0; width:155px }
+  #wp-calendar a{display:block}
+    #wp-calendar #next a{ padding-right:10px; text-align:right}
+    #wp-calendar #prev a{ padding-left:10px; text-align:left}
+  #wp-calendar caption{ text-align:center; width:100% }
+#wp-calendar td {padding:3px 0; text-align:center }
+#wp-calendar td.pad:hover {/* Doesn't work in IE */background-color:#fff}
+
+
+/*  wp-caption
+---------------------------------------*/
+.wp-caption {border:1px solid #ddd; text-align:center; background-color:#f3f3f3; padding-top:4px; margin:10px; -moz-border-radius:3px; -khtml-border-radius:3px; -webkit-border-radius:3px; border-radius:3px}
+.wp-caption img{margin:0; padding:0; border:0 none}
+.wp-caption p.wp-caption-text{font-size:11px; line-height:17px; padding:0 4px 5px; margin:0}
+
+/*  Widgets
+---------------------------------------*/
+li.widget{color:#7A7A7A; /*padding-top:6px; *//*padding-bottom:14px; *//*padding-left:10px; */}
+li.widget h2.widgettitle{color:#9BB835; margin:5px 0 0; padding:0; font-size:18px; 
+  font-weight:bold; background:url(images/widget_title_bg.gif) repeat-y top right; line-height:1.4em}
+li.widget a, li.widget a:visited{color:#7A7A7A}
+li.widget a:hover{color:#7A7A7A}
+li.widget div.rssbuttonwidget{color:#9BB835; font-size:18px; font-weight:bold; line-height:1em; background:url(images/rss_button.gif) no-repeat 2px 2px; padding-left:24px; height:20px; vertical-align:top}
+li.widget div.rssbuttonwidget a, 
+li.widget div.rssbuttonwidget a:hover, 
+li.widget div.rssbuttonwidget a:visited{color:#9BB835; font-size:18px; font-weight:bold; text-decoration:none}
+
+#subscribe_to_rss{height:20px}
+  #subscribe_to_rss #rss_left{float:left}
+  #subscribe_to_rss #rss_icon{margin-right:7px; vertical-align:middle}
+  #subscribe_to_rss #rss_right{float:left; padding-top:2px}
+#subscribe_to_rss #rss_text_link{/*padding-top:3px; */}
+
+
+/*****************************************    
+      Required: Do Not Modify
+******************************************/
+/*    Helpers         
+ * ------------------------------------*/
+/*  Clearfix  */
+.clearfix:after, .col:after, .cg:after, .section:after, .page:after{content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0} 
+.clearfix, .section, .cg, .col, .block, .page{ display:inline-block} 
+html[xmlns] .clearfix, html[xmlns] .cg, html[xmlns] .col, html[xmlns] .block, html[xmlns] .section, html[xmlns] .page{display:block} 
+* html .clearfix, * html .col, * html .cg, * html .block, * html .section, * html .page{height:1%}
+/*  Clearfloat  */
+.clearfloat { clear:both; height:0; font-size: 1px; line-height: 0px; } 
+.cancelfloatempty {clear:both; font-size:1px; margin:0; padding:0}
+/*  Float */
+.block, .col, .cg, .fl { float: left } .fr { float:right; } .fn { float:none; }
+.section, .page { float: none; }
+.section .block, .section .cg { float: left; width: auto; }
+/*  Image fix for ie 6 */
+.f0, .imgfix { font-size: 0; line-height: 0px;  } 
+.page, .inset { margin-left: auto; margin-right: auto;}
+.inset { width: auto; margin: 0 auto; }
+.hide {display: none; } .db { display: block; }
+
+.single #comments_wrapper{display:none}
+
+.post .post_edit span a {width: 40px; padding: 3px; text-align: center; border: 1px solid #eee;color: #777}
+ .post .post_edit span a:hover { background: #ffff00;  border: 1px solid #ffee00;  }

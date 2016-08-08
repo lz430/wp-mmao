@@ -1,0 +1,4 @@
+/*Fix Terms & Conditions Grey Bar Text*/
+#grey_bar h3.terms {
+    letter-spacing: 0;
+}
